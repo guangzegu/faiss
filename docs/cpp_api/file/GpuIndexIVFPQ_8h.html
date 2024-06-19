@@ -92,6 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="GpuFaissAssert_8h.html">File GpuFaissAssert.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="GpuIcmEncoder_8h.html">File GpuIcmEncoder.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="GpuIndexBinaryFlat_8h.html">File GpuIndexBinaryFlat.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GpuIndexCagra_8h.html">File GpuIndexCagra.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="GpuIndexFlat_8h.html">File GpuIndexFlat.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="GpuIndexIVFFlat_8h.html">File GpuIndexIVFFlat.h</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">File GpuIndexIVFPQ.h</a></li>
@@ -200,8 +201,10 @@
 <li class="toctree-l2"><a class="reference internal" href="ProductQuantizer_8h.html">File ProductQuantizer.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="PtxUtils_8cuh.html">File PtxUtils.cuh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Quantizer_8h.html">File Quantizer.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RaftCagra_8cuh.html">File RaftCagra.cuh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="RaftFlatIndex_8cuh.html">File RaftFlatIndex.cuh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="RaftIVFFlat_8cuh.html">File RaftIVFFlat.cuh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RaftIVFPQ_8cuh.html">File RaftIVFPQ.cuh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="RaftUtils_8h.html">File RaftUtils.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ReductionOperators_8cuh.html">File ReductionOperators.cuh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Reductions_8cuh.html">File Reductions.cuh</a></li>
@@ -234,6 +237,7 @@
 <li class="toctree-l2"><a class="reference internal" href="approx__topk_8h.html">File approx_topk.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="approx__topk__hamming_8h.html">File approx_topk_hamming.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="avx512_8h.html">File avx512.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bf16_8h.html">File bf16.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="clone__index_8h.html">File clone_index.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance-avx2_8h.html">File code_distance-avx2.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="code__distance-generic_8h.html">File code_distance-generic.h</a></li>
@@ -262,6 +266,7 @@
 <li class="toctree-l2"><a class="reference internal" href="lattice__Zn_8h.html">File lattice_Zn.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mode_8h.html">File mode.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="neon-inl_8h.html">File neon-inl.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onednn__utils_8h.html">File onednn_utils.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ordered__key__value_8h.html">File ordered_key_value.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="partitioning_8h.html">File partitioning.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="platform__macros_8h.html">File platform_macros.h</a></li>
@@ -274,9 +279,11 @@
 <li class="toctree-l2"><a class="reference internal" href="simd__result__handlers_8h.html">File simd_result_handlers.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="simdlib_8h.html">File simdlib.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="simdlib__avx2_8h.html">File simdlib_avx2.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simdlib__avx512_8h.html">File simdlib_avx512.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="simdlib__based_8h.html">File simdlib_based.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="simdlib__emulated_8h.html">File simdlib_emulated.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="simdlib__neon_8h.html">File simdlib_neon.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simdlib__ppc64_8h.html">File simdlib_ppc64.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sorting_8h.html">File sorting.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="transpose-avx2-inl_8h.html">File transpose-avx2-inl.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="utils_8h.html">File utils.h</a></li>
@@ -365,7 +372,7 @@
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu19GpuIndexIVFPQConfig17interleavedLayoutE">
 <span id="_CPPv3N5faiss3gpu19GpuIndexIVFPQConfig17interleavedLayoutE"></span><span id="_CPPv2N5faiss3gpu19GpuIndexIVFPQConfig17interleavedLayoutE"></span><span id="faiss::gpu::GpuIndexIVFPQConfig::interleavedLayout__b"></span><span class="target" id="structfaiss_1_1gpu_1_1GpuIndexIVFPQConfig_1a3698bd46d5a0003ec43d434a58794532"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">interleavedLayout</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N5faiss3gpu19GpuIndexIVFPQConfig17interleavedLayoutE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Use the alternative memory layout for the IVF lists WARNING: this is a feature under development, do not use! </p>
+<dd><p>Use the alternative memory layout for the IVF lists WARNING: this is a feature under development, and is only supported with RAFT enabled for the index. Do not use if RAFT is not enabled. </p>
 </dd></dl>
 
 <dl class="cpp var">
@@ -493,6 +500,12 @@
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss3gpu13GpuIndexIVFPQ9setIndex_EP12GpuResourcesi5idx_tN5faiss10MetricTypeEfiibbbPf14IndicesOptions11MemorySpace">
+<span id="_CPPv3N5faiss3gpu13GpuIndexIVFPQ9setIndex_EP12GpuResourcesi5idx_tN5faiss10MetricTypeEfiibbbPf14IndicesOptions11MemorySpace"></span><span id="_CPPv2N5faiss3gpu13GpuIndexIVFPQ9setIndex_EP12GpuResourcesi5idx_tN5faiss10MetricTypeEfiibbbPf14IndicesOptions11MemorySpace"></span><span id="faiss::gpu::GpuIndexIVFPQ::setIndex___GpuResourcesP.i.idx_t.faiss::MetricType.float.i.i.b.b.b.floatP.IndicesOptions.MemorySpace"></span><span class="target" id="classfaiss_1_1gpu_1_1GpuIndexIVFPQ_1a2ff7d6ec03863a7ecb048b06faf6100e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setIndex_</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../class/classfaiss_1_1gpu_1_1GpuResources.html#_CPPv4N5faiss3gpu12GpuResourcesE" title="faiss::gpu::GpuResources"><span class="n"><span class="pre">GpuResources</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">resources</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dim</span></span>, <a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss5idx_tE" title="faiss::idx_t"><span class="n"><span class="pre">idx_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">nlist</span></span>, <a class="reference internal" href="AdditiveQuantizer_8h.html#_CPPv45faiss" title="faiss"><span class="n"><span class="pre">faiss</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="MetricType_8h.html#_CPPv4N5faiss10MetricTypeE" title="faiss::MetricType"><span class="n"><span class="pre">MetricType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">metric</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">metricArg</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">numSubQuantizers</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bitsPerSubQuantizer</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">useFloat16LookupTables</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">useMMCodeDistance</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interleavedLayout</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pqCentroidData</span></span>, <a class="reference internal" href="GpuIndicesOptions_8h.html#_CPPv4N5faiss3gpu14IndicesOptionsE" title="faiss::gpu::IndicesOptions"><span class="n"><span class="pre">IndicesOptions</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">indicesOptions</span></span>, <a class="reference internal" href="GpuResources_8h.html#_CPPv4N5faiss3gpu11MemorySpaceE" title="faiss::gpu::MemorySpace"><span class="n"><span class="pre">MemorySpace</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">space</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Initialize appropriate index. </p>
+</dd></dl>
+
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss3gpu13GpuIndexIVFPQ17verifyPQSettings_Ev">
 <span id="_CPPv3NK5faiss3gpu13GpuIndexIVFPQ17verifyPQSettings_Ev"></span><span id="_CPPv2NK5faiss3gpu13GpuIndexIVFPQ17verifyPQSettings_Ev"></span><span id="faiss::gpu::GpuIndexIVFPQ::verifyPQSettings_C"></span><span class="target" id="classfaiss_1_1gpu_1_1GpuIndexIVFPQ_1aa2ffc3990536d39f4ced8201d4438793"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">verifyPQSettings_</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
