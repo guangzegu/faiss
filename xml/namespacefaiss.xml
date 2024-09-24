@@ -573,6 +573,59 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacefaiss_1ad00558df7134f0ad1536ac33a2805487" prot="public" static="yes" mutable="no">
+        <type>dnnl::engine</type>
+        <definition>dnnl::engine faiss::cpu_engine</definition>
+        <argsstring></argsstring>
+        <name>cpu_engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/cppcontrib/amx/onednn_utils.h" line="20" column="21" bodyfile="faiss/cppcontrib/amx/onednn_utils.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacefaiss_1a20e9051800b2fdb63bb93f07134fbb7d" prot="public" static="yes" mutable="no">
+        <type>dnnl::stream</type>
+        <definition>dnnl::stream faiss::engine_stream</definition>
+        <argsstring></argsstring>
+        <name>engine_stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/cppcontrib/amx/onednn_utils.h" line="21" column="21" bodyfile="faiss/cppcontrib/amx/onednn_utils.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacefaiss_1a6c6b214a9ae11d19d6c4e07b7bd2d2a1" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool faiss::is_onednn_init</definition>
+        <argsstring></argsstring>
+        <name>is_onednn_init</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/cppcontrib/amx/onednn_utils.h" line="22" column="13" bodyfile="faiss/cppcontrib/amx/onednn_utils.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacefaiss_1ace71d865effe511a322747bb4062baac" prot="public" static="yes" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex faiss::init_mutex</definition>
+        <argsstring></argsstring>
+        <name>init_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/cppcontrib/amx/onednn_utils.h" line="23" column="19" bodyfile="faiss/cppcontrib/amx/onednn_utils.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="namespacefaiss_1a2dcf7a9c4c343f31bc63a5db0c2bff2d" prot="public" static="no" mutable="no">
         <type>FAISS_API <ref refid="structfaiss_1_1HNSWStats" kindref="compound">HNSWStats</ref></type>
         <definition>FAISS_API HNSWStats faiss::hnsw_stats</definition>
@@ -1011,59 +1064,6 @@
         </inbodydescription>
         <location file="faiss/utils/hamming_distance/common.h" line="34" column="26" bodyfile="faiss/utils/hamming_distance/common.h" bodystart="34" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="namespacefaiss_1ad00558df7134f0ad1536ac33a2805487" prot="public" static="yes" mutable="no">
-        <type>dnnl::engine</type>
-        <definition>dnnl::engine faiss::cpu_engine</definition>
-        <argsstring></argsstring>
-        <name>cpu_engine</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/onednn/onednn_utils.h" line="19" column="21" bodyfile="faiss/utils/onednn/onednn_utils.h" bodystart="19" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacefaiss_1a20e9051800b2fdb63bb93f07134fbb7d" prot="public" static="yes" mutable="no">
-        <type>dnnl::stream</type>
-        <definition>dnnl::stream faiss::engine_stream</definition>
-        <argsstring></argsstring>
-        <name>engine_stream</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/onednn/onednn_utils.h" line="20" column="21" bodyfile="faiss/utils/onednn/onednn_utils.h" bodystart="20" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacefaiss_1a6c6b214a9ae11d19d6c4e07b7bd2d2a1" prot="public" static="yes" mutable="no">
-        <type>bool</type>
-        <definition>bool faiss::is_onednn_init</definition>
-        <argsstring></argsstring>
-        <name>is_onednn_init</name>
-        <initializer>= false</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/onednn/onednn_utils.h" line="21" column="13" bodyfile="faiss/utils/onednn/onednn_utils.h" bodystart="21" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="namespacefaiss_1ace71d865effe511a322747bb4062baac" prot="public" static="yes" mutable="no">
-        <type>std::mutex</type>
-        <definition>std::mutex faiss::init_mutex</definition>
-        <argsstring></argsstring>
-        <name>init_mutex</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/onednn/onednn_utils.h" line="22" column="19" bodyfile="faiss/utils/onednn/onednn_utils.h" bodystart="22" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="namespacefaiss_1ae2bb09d8026f83d03936dcddee878a04" prot="public" static="no" mutable="no">
         <type>FAISS_API <ref refid="structfaiss_1_1PartitionStats" kindref="compound">PartitionStats</ref></type>
         <definition>FAISS_API PartitionStats faiss::partition_stats</definition>
@@ -1220,6 +1220,158 @@
         <inbodydescription>
         </inbodydescription>
         <location file="faiss/Clustering.h" line="195" column="7" declfile="faiss/Clustering.h" declline="195" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a71aa4996ab2b1ef00ad16b7a5e9637f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool faiss::is_amxbf16_supported</definition>
+        <argsstring>()</argsstring>
+        <name>is_amxbf16_supported</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/cppcontrib/amx/onednn_utils.h" line="25" column="13" bodyfile="faiss/cppcontrib/amx/onednn_utils.h" bodystart="25" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a168b802dd1c1348ef6c40be1d60829e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void faiss::init_onednn</definition>
+        <argsstring>()</argsstring>
+        <name>init_onednn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/cppcontrib/amx/onednn_utils.h" line="33" column="13" bodyfile="faiss/cppcontrib/amx/onednn_utils.h" bodystart="33" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1a8ff0e74ee191c156979ce49c0eda4068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>faiss::__attribute__</definition>
+        <argsstring>((constructor)) static void library_load()</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(constructor)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/cppcontrib/amx/onednn_utils.h" line="47" column="1" bodyfile="faiss/cppcontrib/amx/onednn_utils.h" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefaiss_1abe08aec72fe7ca40cc57871712297aaf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void faiss::comput_f32bf16f32_inner_product</definition>
+        <argsstring>(uint32_t xrow, uint32_t xcol, uint32_t yrow, uint32_t ycol, float *in_f32_1, float *in_f32_2, float *out_f32)</argsstring>
+        <name>comput_f32bf16f32_inner_product</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>xrow</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>xcol</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>yrow</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>ycol</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>in_f32_1</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>in_f32_2</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out_f32</declname>
+        </param>
+        <briefdescription>
+<para>Compute float32 matrix inner product with bf16 intermediate results to accelerate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The main idea is:<orderedlist>
+<listitem><para>Define float32 memory layout for input and output</para>
+</listitem><listitem><para>Create low precision bf16 memory descriptors as inner product input</para>
+</listitem><listitem><para>Generate inner product primitive descriptor</para>
+</listitem><listitem><para>Execute float32 =&gt; (reorder) =&gt; bf16 =&gt; (inner product) =&gt; float32 chain operation, isolate different precision data, accelerate inner product</para>
+</listitem><listitem><para>Pipeline execution via streams for asynchronous scheduling</para>
+</listitem></orderedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xrow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row number of input matrix X </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xcol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column number of input matrix X </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yrow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row number of weight matrix Y </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ycol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column number of weight matrix Y </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_f32_1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input matrix pointer in float32 type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_f32_2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Weight matrix pointer in float32 type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_f32</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output matrix pointer for result in float32 type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="faiss/cppcontrib/amx/onednn_utils.h" line="74" column="13" bodyfile="faiss/cppcontrib/amx/onednn_utils.h" bodystart="74" bodyend="140"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a9ea277840d6448e42b304287257de0b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -7637,158 +7789,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="faiss/utils/Heap.h" line="520" column="6" declfile="faiss/utils/Heap.h" declline="520" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a71aa4996ab2b1ef00ad16b7a5e9637f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>static bool faiss::is_amxbf16_supported</definition>
-        <argsstring>()</argsstring>
-        <name>is_amxbf16_supported</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/onednn/onednn_utils.h" line="24" column="13" bodyfile="faiss/utils/onednn/onednn_utils.h" bodystart="24" bodyend="30"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a168b802dd1c1348ef6c40be1d60829e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>static void faiss::init_onednn</definition>
-        <argsstring>()</argsstring>
-        <name>init_onednn</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/onednn/onednn_utils.h" line="32" column="13" bodyfile="faiss/utils/onednn/onednn_utils.h" bodystart="32" bodyend="44"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1a8ff0e74ee191c156979ce49c0eda4068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>faiss::__attribute__</definition>
-        <argsstring>((constructor)) static void library_load()</argsstring>
-        <name>__attribute__</name>
-        <param>
-          <type>(constructor)</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/onednn/onednn_utils.h" line="46" column="1" bodyfile="faiss/utils/onednn/onednn_utils.h" bodystart="46" bodyend="50"/>
-      </memberdef>
-      <memberdef kind="function" id="namespacefaiss_1abe08aec72fe7ca40cc57871712297aaf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>static void faiss::comput_f32bf16f32_inner_product</definition>
-        <argsstring>(uint32_t xrow, uint32_t xcol, uint32_t yrow, uint32_t ycol, float *in_f32_1, float *in_f32_2, float *out_f32)</argsstring>
-        <name>comput_f32bf16f32_inner_product</name>
-        <param>
-          <type>uint32_t</type>
-          <declname>xrow</declname>
-        </param>
-        <param>
-          <type>uint32_t</type>
-          <declname>xcol</declname>
-        </param>
-        <param>
-          <type>uint32_t</type>
-          <declname>yrow</declname>
-        </param>
-        <param>
-          <type>uint32_t</type>
-          <declname>ycol</declname>
-        </param>
-        <param>
-          <type>float *</type>
-          <declname>in_f32_1</declname>
-        </param>
-        <param>
-          <type>float *</type>
-          <declname>in_f32_2</declname>
-        </param>
-        <param>
-          <type>float *</type>
-          <declname>out_f32</declname>
-        </param>
-        <briefdescription>
-<para>Compute float32 matrix inner product with bf16 intermediate results to accelerate. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>The main idea is:<orderedlist>
-<listitem><para>Define float32 memory layout for input and output</para>
-</listitem><listitem><para>Create low precision bf16 memory descriptors as inner product input</para>
-</listitem><listitem><para>Generate inner product primitive descriptor</para>
-</listitem><listitem><para>Execute float32 =&gt; (reorder) =&gt; bf16 =&gt; (inner product) =&gt; float32 chain operation, isolate different precision data, accelerate inner product</para>
-</listitem><listitem><para>Pipeline execution via streams for asynchronous scheduling</para>
-</listitem></orderedlist>
-</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>xrow</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Row number of input matrix X </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>xcol</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Column number of input matrix X </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>yrow</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Row number of weight matrix Y </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>ycol</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Column number of weight matrix Y </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>in_f32_1</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Input matrix pointer in float32 type </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>in_f32_2</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Weight matrix pointer in float32 type </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>out_f32</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Output matrix pointer for result in float32 type </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>None </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="faiss/utils/onednn/onednn_utils.h" line="73" column="13" bodyfile="faiss/utils/onednn/onednn_utils.h" bodystart="73" bodyend="139"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a36bf2bb72e8dd3c2e320a6ef89765635" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>

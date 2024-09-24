@@ -8867,6 +8867,10 @@
     <member refid="namespacefaiss_1a17c03ceef680b86f30abf40c359f0b6c" kind="typedef"><name>int_minheap_array_t</name></member>
     <member refid="namespacefaiss_1a3d829413dc05d84f9564a4fa8d831456" kind="typedef"><name>float_maxheap_array_t</name></member>
     <member refid="namespacefaiss_1a4bd3ab42c7aaf074f798553a68eacd52" kind="typedef"><name>int_maxheap_array_t</name></member>
+    <member refid="namespacefaiss_1ad00558df7134f0ad1536ac33a2805487" kind="variable"><name>cpu_engine</name></member>
+    <member refid="namespacefaiss_1a20e9051800b2fdb63bb93f07134fbb7d" kind="variable"><name>engine_stream</name></member>
+    <member refid="namespacefaiss_1a6c6b214a9ae11d19d6c4e07b7bd2d2a1" kind="variable"><name>is_onednn_init</name></member>
+    <member refid="namespacefaiss_1ace71d865effe511a322747bb4062baac" kind="variable"><name>init_mutex</name></member>
     <member refid="namespacefaiss_1a2dcf7a9c4c343f31bc63a5db0c2bff2d" kind="variable"><name>hnsw_stats</name></member>
     <member refid="namespacefaiss_1ad91730bea51315222b985f9aba4359b2" kind="variable"><name>product_quantizer_compute_codes_bs</name></member>
     <member refid="namespacefaiss_1a8e2c4631a31c84b5debeab837ae25ca2" kind="variable"><name>simd_result_handlers_accept_virtual</name></member>
@@ -8899,16 +8903,16 @@
     <member refid="namespacefaiss_1a5ba348773d3fc46e3ea6f668c70bade1" kind="variable"><name>distance_compute_min_k_reservoir</name></member>
     <member refid="namespacefaiss_1a1c1a7ffff3e34768b027b77d0d9f96df" kind="variable"><name>hamming_batch_size</name></member>
     <member refid="namespacefaiss_1a807d8fdc887adb34ff028c3ccaeb1fe1" kind="variable"><name>hamdis_tab_ham_bytes</name></member>
-    <member refid="namespacefaiss_1ad00558df7134f0ad1536ac33a2805487" kind="variable"><name>cpu_engine</name></member>
-    <member refid="namespacefaiss_1a20e9051800b2fdb63bb93f07134fbb7d" kind="variable"><name>engine_stream</name></member>
-    <member refid="namespacefaiss_1a6c6b214a9ae11d19d6c4e07b7bd2d2a1" kind="variable"><name>is_onednn_init</name></member>
-    <member refid="namespacefaiss_1ace71d865effe511a322747bb4062baac" kind="variable"><name>init_mutex</name></member>
     <member refid="namespacefaiss_1ae2bb09d8026f83d03936dcddee878a04" kind="variable"><name>partition_stats</name></member>
     <member refid="namespacefaiss_1a68d671ff6d57b17f9fbf3c65607fbcff" kind="variable"><name>bucket_sort_verbose</name></member>
     <member refid="namespacefaiss_1a71dedb2a0d42fcaf8348a30112401069" kind="function"><name>clone_index</name></member>
     <member refid="namespacefaiss_1a9ff4e1ad31eab56be1b5b32642ff0660" kind="function"><name>clone_Quantizer</name></member>
     <member refid="namespacefaiss_1aa052b2baf4ccdf2c7d2841f6db35e4bc" kind="function"><name>clone_binary_index</name></member>
     <member refid="namespacefaiss_1a38bd0dde8a1b229201a5fcb64d05daa6" kind="function"><name>kmeans_clustering</name></member>
+    <member refid="namespacefaiss_1a71aa4996ab2b1ef00ad16b7a5e9637f3" kind="function"><name>is_amxbf16_supported</name></member>
+    <member refid="namespacefaiss_1a168b802dd1c1348ef6c40be1d60829e0" kind="function"><name>init_onednn</name></member>
+    <member refid="namespacefaiss_1a8ff0e74ee191c156979ce49c0eda4068" kind="function"><name>__attribute__</name></member>
+    <member refid="namespacefaiss_1abe08aec72fe7ca40cc57871712297aaf" kind="function"><name>comput_f32bf16f32_inner_product</name></member>
     <member refid="namespacefaiss_1a9ea277840d6448e42b304287257de0b7" kind="function"><name>distance_single_code_generic</name></member>
     <member refid="namespacefaiss_1a92b46f26c1c9dcf1da18dbb84ccdd26a" kind="function"><name>distance_four_codes_generic</name></member>
     <member refid="namespacefaiss_1a4f5a40d297ddf6822a9262a333f938a3" kind="function"><name>distance_single_code</name></member>
@@ -9063,10 +9067,6 @@
     <member refid="namespacefaiss_1a8023405f5360828c9a892510a5f4c4ec" kind="function"><name>indirect_heap_pop</name></member>
     <member refid="namespacefaiss_1a8ecaf37c77256e02a946e1572b992ed5" kind="function"><name>indirect_heap_push</name></member>
     <member refid="namespacefaiss_1a5bd0fd59cade66b4d3bda7ba3d59cfd0" kind="function"><name>merge_knn_results</name></member>
-    <member refid="namespacefaiss_1a71aa4996ab2b1ef00ad16b7a5e9637f3" kind="function"><name>is_amxbf16_supported</name></member>
-    <member refid="namespacefaiss_1a168b802dd1c1348ef6c40be1d60829e0" kind="function"><name>init_onednn</name></member>
-    <member refid="namespacefaiss_1a8ff0e74ee191c156979ce49c0eda4068" kind="function"><name>__attribute__</name></member>
-    <member refid="namespacefaiss_1abe08aec72fe7ca40cc57871712297aaf" kind="function"><name>comput_f32bf16f32_inner_product</name></member>
     <member refid="namespacefaiss_1a36bf2bb72e8dd3c2e320a6ef89765635" kind="function"><name>cmin_nextafter</name></member>
     <member refid="namespacefaiss_1a6081a16de4c32586093673ee7590731f" kind="function"><name>cmax_nextafter</name></member>
     <member refid="namespacefaiss_1a49b45a342afbbed4b3d58dd42ff19f71" kind="function"><name>cmin_nextafter&lt; float &gt;</name></member>
@@ -9144,9 +9144,9 @@
     <member refid="namespacefaiss_1a0e26e4710a7c276f46b730d8ab6ac1e0" kind="function"><name>hash_bytes</name></member>
     <member refid="namespacefaiss_1ad86caef545c6a7672422d7d34c03f446" kind="function"><name>check_openmp</name></member>
   </compound>
-  <compound refid="namespacefaiss_1_1_0d132" kind="namespace"><name>faiss::@132</name>
+  <compound refid="namespacefaiss_1_1_0d133" kind="namespace"><name>faiss::@133</name>
   </compound>
-  <compound refid="namespacefaiss_1_1_0d141" kind="namespace"><name>faiss::@141</name>
+  <compound refid="namespacefaiss_1_1_0d142" kind="namespace"><name>faiss::@142</name>
   </compound>
   <compound refid="namespacefaiss_1_1_0d158" kind="namespace"><name>faiss::@158</name>
   </compound>
@@ -9159,19 +9159,19 @@
   <compound refid="namespacefaiss_1_1cppcontrib" kind="namespace"><name>faiss::cppcontrib</name>
     <member refid="Level2-inl_8h_1ae4e8b14ff45f25eb929a6d6b3cbd3c39" kind="function"><name>isBigEndian</name></member>
   </compound>
-  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d10" kind="namespace"><name>faiss::cppcontrib::@10</name>
+  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d11" kind="namespace"><name>faiss::cppcontrib::@11</name>
   </compound>
-  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d12" kind="namespace"><name>faiss::cppcontrib::@12</name>
+  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d13" kind="namespace"><name>faiss::cppcontrib::@13</name>
   </compound>
-  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d5" kind="namespace"><name>faiss::cppcontrib::@5</name>
+  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d6" kind="namespace"><name>faiss::cppcontrib::@6</name>
   </compound>
-  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d7" kind="namespace"><name>faiss::cppcontrib::@7</name>
+  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d8" kind="namespace"><name>faiss::cppcontrib::@8</name>
   </compound>
   <compound refid="namespacefaiss_1_1cppcontrib_1_1detail" kind="namespace"><name>faiss::cppcontrib::detail</name>
     <member refid="UintReader_8h_1a7d4c5421a72ecb5ccaf38b8d13c639b8" kind="typedef"><name>UintReader</name></member>
     <member refid="UintReader_8h_1a4e74e176d1b9d3deefcce7fa1300cb2d" kind="typedef"><name>UintReaderRaw</name></member>
   </compound>
-  <compound refid="namespacefaiss_1_1cppcontrib_1_1detail_1_1_0d4" kind="namespace"><name>faiss::cppcontrib::detail::@4</name>
+  <compound refid="namespacefaiss_1_1cppcontrib_1_1detail_1_1_0d5" kind="namespace"><name>faiss::cppcontrib::detail::@5</name>
   </compound>
   <compound refid="namespacefaiss_1_1detail" kind="namespace"><name>faiss::detail</name>
   </compound>
@@ -9376,6 +9376,8 @@
   <compound refid="clone__index_8h" kind="file"><name>clone_index.h</name>
   </compound>
   <compound refid="Clustering_8h" kind="file"><name>Clustering.h</name>
+  </compound>
+  <compound refid="onednn__utils_8h" kind="file"><name>onednn_utils.h</name>
   </compound>
   <compound refid="CoarseBitType_8h" kind="file"><name>CoarseBitType.h</name>
   </compound>
@@ -9850,8 +9852,6 @@
   </compound>
   <compound refid="Heap_8h" kind="file"><name>Heap.h</name>
   </compound>
-  <compound refid="onednn__utils_8h" kind="file"><name>onednn_utils.h</name>
-  </compound>
   <compound refid="ordered__key__value_8h" kind="file"><name>ordered_key_value.h</name>
   </compound>
   <compound refid="partitioning_8h" kind="file"><name>partitioning.h</name>
@@ -9887,6 +9887,8 @@
   </compound>
   <compound refid="VectorTransform_8h" kind="file"><name>VectorTransform.h</name>
   </compound>
+  <compound refid="dir_00d2a6d1ed2d9367e037528ec070f4c8" kind="dir"><name>faiss/cppcontrib/amx</name>
+  </compound>
   <compound refid="dir_c2dc665bb85977007db19edac984ae84" kind="dir"><name>faiss/utils/approx_topk</name>
   </compound>
   <compound refid="dir_e13a2bd573d2812b9a3a73eeae8e330e" kind="dir"><name>faiss/utils/approx_topk_hamming</name>
@@ -9907,13 +9909,11 @@
   </compound>
   <compound refid="dir_a990053ab0ed2a0e35fd7924fe582c4e" kind="dir"><name>faiss/utils/hamming_distance</name>
   </compound>
-  <compound refid="dir_dd54f55b8e87373dfa8f730dca1dd7f8" kind="dir"><name>faiss/impl</name>
-  </compound>
   <compound refid="dir_c7562a8177f4c7fed0562155251b7d22" kind="dir"><name>faiss/gpu/impl</name>
   </compound>
-  <compound refid="dir_71a5f2b83da87e7fb52bb1a9a3fef9ad" kind="dir"><name>faiss/invlists</name>
+  <compound refid="dir_dd54f55b8e87373dfa8f730dca1dd7f8" kind="dir"><name>faiss/impl</name>
   </compound>
-  <compound refid="dir_a4ad831181684f3bad1d203c807cc046" kind="dir"><name>faiss/utils/onednn</name>
+  <compound refid="dir_71a5f2b83da87e7fb52bb1a9a3fef9ad" kind="dir"><name>faiss/invlists</name>
   </compound>
   <compound refid="dir_a183f389f7fdb8e3b256673548812ad2" kind="dir"><name>faiss/gpu/perf</name>
   </compound>
