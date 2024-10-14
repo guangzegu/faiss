@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en">
 <head>
@@ -6,20 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Struct faiss::ProductResidualQuantizer &mdash; Faiss  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
 
   
     <link rel="canonical" href="https://faiss.ai/cpp_api/struct/structfaiss_1_1ProductResidualQuantizer.html" />
-  <!--[if lt IE 9]>
-    <script src="../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=b3ba4146"></script>
-        <script src="../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js?v=b3ba4146"></script>
+      <script src="../../_static/doctools.js?v=888ff710"></script>
+      <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -204,6 +201,7 @@
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexNSGFlat.html">Struct faiss::IndexNSGFlat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexNSGPQ.html">Struct faiss::IndexNSGPQ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexNSGSQ.html">Struct faiss::IndexNSGSQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexNeuralNetCodec.html">Struct faiss::IndexNeuralNetCodec</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexPQ.html">Struct faiss::IndexPQ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexPQFastScan.html">Struct faiss::IndexPQFastScan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexPQStats.html">Struct faiss::IndexPQStats</a></li>
@@ -212,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexProductLocalSearchQuantizerFastScan.html">Struct faiss::IndexProductLocalSearchQuantizerFastScan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexProductResidualQuantizer.html">Struct faiss::IndexProductResidualQuantizer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexProductResidualQuantizerFastScan.html">Struct faiss::IndexProductResidualQuantizerFastScan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexQINCo.html">Struct faiss::IndexQINCo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexRandom.html">Struct faiss::IndexRandom</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexRefine.html">Struct faiss::IndexRefine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1IndexRefineFlat.html">Struct faiss::IndexRefineFlat</a></li>
@@ -246,6 +245,7 @@
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1NNDescent.html">Struct faiss::NNDescent</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1NSG.html">Struct faiss::NSG</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1NegativeDistanceComputer.html">Struct faiss::NegativeDistanceComputer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1NeuralNetCodec.html">Struct faiss::NeuralNetCodec</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1NormTableScaler.html">Struct faiss::NormTableScaler</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1NormalizationTransform.html">Struct faiss::NormalizationTransform</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1OPQMatrix.html">Struct faiss::OPQMatrix</a></li>
@@ -275,6 +275,8 @@
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1ProgressiveDimClustering.html">Struct faiss::ProgressiveDimClustering</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1ProgressiveDimClusteringParameters.html">Struct faiss::ProgressiveDimClusteringParameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1ProgressiveDimIndexFactory.html">Struct faiss::ProgressiveDimIndexFactory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1QINCo.html">Struct faiss::QINCo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1QINCoStep.html">Struct faiss::QINCoStep</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1Quantizer.html">Struct faiss::Quantizer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1RandomGenerator.html">Struct faiss::RandomGenerator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1RandomRotationMatrix.html">Struct faiss::RandomRotationMatrix</a></li>
@@ -308,6 +310,7 @@
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1SimulatedAnnealingOptimizer.html">Struct faiss::SimulatedAnnealingOptimizer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1SimulatedAnnealingParameters.html">Struct faiss::SimulatedAnnealingParameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1SliceInvertedLists.html">Struct faiss::SliceInvertedLists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1SplitMix64RandomGenerator.html">Struct faiss::SplitMix64RandomGenerator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1StopWordsInvertedLists.html">Struct faiss::StopWordsInvertedLists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1TimeoutCallback.html">Struct faiss::TimeoutCallback</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1Top1BlockResultHandler.html">Struct faiss::Top1BlockResultHandler</a></li>
@@ -367,6 +370,10 @@
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1lsq_1_1IcmEncoderFactory.html">Struct faiss::lsq::IcmEncoderFactory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1lsq_1_1LSQTimer.html">Struct faiss::lsq::LSQTimer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1lsq_1_1LSQTimerScope.html">Struct faiss::lsq::LSQTimerScope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1nn_1_1Embedding.html">Struct faiss::nn::Embedding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1nn_1_1FFN.html">Struct faiss::nn::FFN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1nn_1_1Linear.html">Struct faiss::nn::Linear</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1nn_1_1Tensor2DTemplate.html">Struct faiss::nn::Tensor2DTemplate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1nndescent_1_1Neighbor.html">Struct faiss::nndescent::Neighbor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1nndescent_1_1Nhood.html">Struct faiss::nndescent::Nhood</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structfaiss_1_1nsg_1_1Graph.html">Struct faiss::nsg::Graph</a></li>
@@ -606,6 +613,11 @@
 </dd></dl>
 
 <dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss24ProductResidualQuantizer23compute_codebook_tablesEv">
+<span id="_CPPv3N5faiss24ProductResidualQuantizer23compute_codebook_tablesEv"></span><span id="_CPPv2N5faiss24ProductResidualQuantizer23compute_codebook_tablesEv"></span><span id="faiss::ProductResidualQuantizer::compute_codebook_tables"></span><span class="target" id="structfaiss_1_1AdditiveQuantizer_1a11964f0d7ef3603a0855a46634b0096e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">compute_codebook_tables</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK5faiss24ProductResidualQuantizer11encode_normEf">
 <span id="_CPPv3NK5faiss24ProductResidualQuantizer11encode_normEf"></span><span id="_CPPv2NK5faiss24ProductResidualQuantizer11encode_normEf"></span><span id="faiss::ProductResidualQuantizer::encode_norm__floatC"></span><span class="target" id="structfaiss_1_1AdditiveQuantizer_1a7b6a82e71df3f5a989505dd45ed72618"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">encode_norm</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">norm</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
 <dd><p>encode a norm into norm_bits bits </p>
@@ -734,7 +746,8 @@
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss24ProductResidualQuantizer16codebook_offsetsE">
 <span id="_CPPv3N5faiss24ProductResidualQuantizer16codebook_offsetsE"></span><span id="_CPPv2N5faiss24ProductResidualQuantizer16codebook_offsetsE"></span><span id="faiss::ProductResidualQuantizer::codebook_offsets__std::vector:uint64_t:"></span><span class="target" id="structfaiss_1_1AdditiveQuantizer_1a5cf9516480f6fd9912d4b0d323109088"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">uint64_t</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">codebook_offsets</span></span></span><br /></dt>
-<dd></dd></dl>
+<dd><p>codebook #1 is stored in rows codebook_offsets[i]:codebook_offsets[i+1] in the codebooks table of size total_codebook_size by d </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss24ProductResidualQuantizer8tot_bitsE">
@@ -773,15 +786,27 @@
 </dd></dl>
 
 <dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss24ProductResidualQuantizer9norm_tabsE">
+<span id="_CPPv3N5faiss24ProductResidualQuantizer9norm_tabsE"></span><span id="_CPPv2N5faiss24ProductResidualQuantizer9norm_tabsE"></span><span id="faiss::ProductResidualQuantizer::norm_tabs__std::vector:float:"></span><span class="target" id="structfaiss_1_1AdditiveQuantizer_1a345684bf40fb4395fb0bc29fa0708424"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">norm_tabs</span></span></span><br /></dt>
+<dd><p>auxiliary data for ST_norm_lsq2x4 and ST_norm_rq2x4 store norms of codebook entries for 4-bit fastscan </p>
+</dd></dl>
+
+<dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N5faiss24ProductResidualQuantizer5qnormE">
 <span id="_CPPv3N5faiss24ProductResidualQuantizer5qnormE"></span><span id="_CPPv2N5faiss24ProductResidualQuantizer5qnormE"></span><span id="faiss::ProductResidualQuantizer::qnorm__IndexFlat1D"></span><span class="target" id="structfaiss_1_1AdditiveQuantizer_1aa5fe31c6a8b80a5bf03bd72bc7744def"></span><a class="reference internal" href="../file/IndexFlat_8h.html#_CPPv4N5faiss11IndexFlat1DE" title="faiss::IndexFlat1D"><span class="n"><span class="pre">IndexFlat1D</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">qnorm</span></span></span><br /></dt>
 <dd><p>store and search norms </p>
 </dd></dl>
 
 <dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N5faiss24ProductResidualQuantizer9norm_tabsE">
-<span id="_CPPv3N5faiss24ProductResidualQuantizer9norm_tabsE"></span><span id="_CPPv2N5faiss24ProductResidualQuantizer9norm_tabsE"></span><span id="faiss::ProductResidualQuantizer::norm_tabs__std::vector:float:"></span><span class="target" id="structfaiss_1_1AdditiveQuantizer_1a345684bf40fb4395fb0bc29fa0708424"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">norm_tabs</span></span></span><br /></dt>
-<dd><p>store norms of codebook entries for 4-bit fastscan search </p>
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss24ProductResidualQuantizer14centroid_normsE">
+<span id="_CPPv3N5faiss24ProductResidualQuantizer14centroid_normsE"></span><span id="_CPPv2N5faiss24ProductResidualQuantizer14centroid_normsE"></span><span id="faiss::ProductResidualQuantizer::centroid_norms__std::vector:float:"></span><span class="target" id="structfaiss_1_1AdditiveQuantizer_1af366aff9e6f592413920232add8a4658"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">centroid_norms</span></span></span><br /></dt>
+<dd><p>norms of all codebook entries (size total_codebook_size) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5faiss24ProductResidualQuantizer23codebook_cross_productsE">
+<span id="_CPPv3N5faiss24ProductResidualQuantizer23codebook_cross_productsE"></span><span id="_CPPv2N5faiss24ProductResidualQuantizer23codebook_cross_productsE"></span><span id="faiss::ProductResidualQuantizer::codebook_cross_products__std::vector:float:"></span><span class="target" id="structfaiss_1_1AdditiveQuantizer_1a8a7bf5068face76845f039137af0e81d"></span><a class="reference internal" href="../namespace/namespacestd.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">codebook_cross_products</span></span></span><br /></dt>
+<dd><p>dot products of all codebook entries with the previous codebooks size sum(codebook_offsets[m] * 2^nbits[m], m=0..M-1) </p>
 </dd></dl>
 
 <dl class="cpp var">
