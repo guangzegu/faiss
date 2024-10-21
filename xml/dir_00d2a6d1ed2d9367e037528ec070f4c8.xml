@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_00d2a6d1ed2d9367e037528ec070f4c8" kind="dir">
     <compoundname>faiss/cppcontrib/amx</compoundname>
+    <innerfile refid="distances__dnnl_8h">distances_dnnl.h</innerfile>
     <innerfile refid="onednn__utils_8h">onednn_utils.h</innerfile>
     <briefdescription>
     </briefdescription>

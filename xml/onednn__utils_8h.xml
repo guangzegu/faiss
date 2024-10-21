@@ -6,6 +6,7 @@
     <includes local="no">mutex</includes>
     <includes local="no">shared_mutex</includes>
     <includes local="yes">oneapi/dnnl/dnnl.hpp</includes>
+    <includedby refid="distances__dnnl_8h" local="no">faiss/cppcontrib/amx/distances_dnnl.h</includedby>
     <incdepgraph>
       <node id="2">
         <label>stdlib.h</label>
@@ -32,6 +33,18 @@
         <label>mutex</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>faiss/cppcontrib/amx/distances_dnnl.h</label>
+        <link refid="distances__dnnl_8h_source"/>
+      </node>
+      <node id="1">
+        <label>faiss/cppcontrib/amx/onednn_utils.h</label>
+        <link refid="onednn__utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
     <innernamespace refid="namespacefaiss">faiss</innernamespace>
     <briefdescription>
     </briefdescription>

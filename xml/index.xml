@@ -9067,6 +9067,8 @@
     <member refid="namespacefaiss_1a17c03ceef680b86f30abf40c359f0b6c" kind="typedef"><name>int_minheap_array_t</name></member>
     <member refid="namespacefaiss_1a3d829413dc05d84f9564a4fa8d831456" kind="typedef"><name>float_maxheap_array_t</name></member>
     <member refid="namespacefaiss_1a4bd3ab42c7aaf074f798553a68eacd52" kind="typedef"><name>int_maxheap_array_t</name></member>
+    <member refid="namespacefaiss_1aef69e5bfd564fb093433307a255ff909" kind="variable"><name>distance_compute_dnnl_query_bs</name></member>
+    <member refid="namespacefaiss_1ae5729ef144513e29fecd6ad480d72632" kind="variable"><name>distance_compute_dnnl_database_bs</name></member>
     <member refid="namespacefaiss_1ad00558df7134f0ad1536ac33a2805487" kind="variable"><name>cpu_engine</name></member>
     <member refid="namespacefaiss_1a20e9051800b2fdb63bb93f07134fbb7d" kind="variable"><name>engine_stream</name></member>
     <member refid="namespacefaiss_1a6c6b214a9ae11d19d6c4e07b7bd2d2a1" kind="variable"><name>is_onednn_init</name></member>
@@ -9099,8 +9101,6 @@
     <member refid="namespacefaiss_1a9875918581ad243ce5483a090c9da918" kind="variable"><name>distance_compute_blas_threshold</name></member>
     <member refid="namespacefaiss_1a70eb5be4a6af3b9d948bcb8f949a4e9f" kind="variable"><name>distance_compute_blas_query_bs</name></member>
     <member refid="namespacefaiss_1acbd29d880c5aeaf1caf6266483253953" kind="variable"><name>distance_compute_blas_database_bs</name></member>
-    <member refid="namespacefaiss_1aef69e5bfd564fb093433307a255ff909" kind="variable"><name>distance_compute_dnnl_query_bs</name></member>
-    <member refid="namespacefaiss_1ae5729ef144513e29fecd6ad480d72632" kind="variable"><name>distance_compute_dnnl_database_bs</name></member>
     <member refid="namespacefaiss_1a1c1a7ffff3e34768b027b77d0d9f96df" kind="variable"><name>hamming_batch_size</name></member>
     <member refid="namespacefaiss_1a807d8fdc887adb34ff028c3ccaeb1fe1" kind="variable"><name>hamdis_tab_ham_bytes</name></member>
     <member refid="namespacefaiss_1ae2bb09d8026f83d03936dcddee878a04" kind="variable"><name>partition_stats</name></member>
@@ -9109,6 +9109,8 @@
     <member refid="namespacefaiss_1a9ff4e1ad31eab56be1b5b32642ff0660" kind="function"><name>clone_Quantizer</name></member>
     <member refid="namespacefaiss_1aa052b2baf4ccdf2c7d2841f6db35e4bc" kind="function"><name>clone_binary_index</name></member>
     <member refid="namespacefaiss_1a38bd0dde8a1b229201a5fcb64d05daa6" kind="function"><name>kmeans_clustering</name></member>
+    <member refid="namespacefaiss_1a7d2e0afde158e91b53656e3a457ba534" kind="function"><name>exhaustive_inner_product_seq_dnnl</name></member>
+    <member refid="namespacefaiss_1a39855f4b9d2489dec3ab3d96d458008b" kind="function"><name>exhaustive_inner_product_blas_dnnl</name></member>
     <member refid="namespacefaiss_1a71aa4996ab2b1ef00ad16b7a5e9637f3" kind="function"><name>is_amxbf16_supported</name></member>
     <member refid="namespacefaiss_1a168b802dd1c1348ef6c40be1d60829e0" kind="function"><name>init_onednn</name></member>
     <member refid="namespacefaiss_1a8ff0e74ee191c156979ce49c0eda4068" kind="function"><name>__attribute__</name></member>
@@ -9363,34 +9365,34 @@
     <member refid="namespacefaiss_1a0e26e4710a7c276f46b730d8ab6ac1e0" kind="function"><name>hash_bytes</name></member>
     <member refid="namespacefaiss_1ad86caef545c6a7672422d7d34c03f446" kind="function"><name>check_openmp</name></member>
   </compound>
-  <compound refid="namespacefaiss_1_1_0d136" kind="namespace"><name>faiss::@136</name>
+  <compound refid="namespacefaiss_1_1_0d137" kind="namespace"><name>faiss::@137</name>
   </compound>
-  <compound refid="namespacefaiss_1_1_0d145" kind="namespace"><name>faiss::@145</name>
+  <compound refid="namespacefaiss_1_1_0d146" kind="namespace"><name>faiss::@146</name>
   </compound>
-  <compound refid="namespacefaiss_1_1_0d162" kind="namespace"><name>faiss::@162</name>
-  </compound>
-  <compound refid="namespacefaiss_1_1_0d164" kind="namespace"><name>faiss::@164</name>
+  <compound refid="namespacefaiss_1_1_0d163" kind="namespace"><name>faiss::@163</name>
   </compound>
   <compound refid="namespacefaiss_1_1_0d165" kind="namespace"><name>faiss::@165</name>
   </compound>
   <compound refid="namespacefaiss_1_1_0d166" kind="namespace"><name>faiss::@166</name>
   </compound>
+  <compound refid="namespacefaiss_1_1_0d167" kind="namespace"><name>faiss::@167</name>
+  </compound>
   <compound refid="namespacefaiss_1_1cppcontrib" kind="namespace"><name>faiss::cppcontrib</name>
     <member refid="Level2-inl_8h_1ae4e8b14ff45f25eb929a6d6b3cbd3c39" kind="function"><name>isBigEndian</name></member>
   </compound>
-  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d12" kind="namespace"><name>faiss::cppcontrib::@12</name>
+  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d10" kind="namespace"><name>faiss::cppcontrib::@10</name>
   </compound>
-  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d14" kind="namespace"><name>faiss::cppcontrib::@14</name>
+  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d13" kind="namespace"><name>faiss::cppcontrib::@13</name>
   </compound>
-  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d7" kind="namespace"><name>faiss::cppcontrib::@7</name>
+  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d15" kind="namespace"><name>faiss::cppcontrib::@15</name>
   </compound>
-  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d9" kind="namespace"><name>faiss::cppcontrib::@9</name>
+  <compound refid="namespacefaiss_1_1cppcontrib_1_1_0d8" kind="namespace"><name>faiss::cppcontrib::@8</name>
   </compound>
   <compound refid="namespacefaiss_1_1cppcontrib_1_1detail" kind="namespace"><name>faiss::cppcontrib::detail</name>
     <member refid="UintReader_8h_1a7d4c5421a72ecb5ccaf38b8d13c639b8" kind="typedef"><name>UintReader</name></member>
     <member refid="UintReader_8h_1a4e74e176d1b9d3deefcce7fa1300cb2d" kind="typedef"><name>UintReaderRaw</name></member>
   </compound>
-  <compound refid="namespacefaiss_1_1cppcontrib_1_1detail_1_1_0d5" kind="namespace"><name>faiss::cppcontrib::detail::@5</name>
+  <compound refid="namespacefaiss_1_1cppcontrib_1_1detail_1_1_0d6" kind="namespace"><name>faiss::cppcontrib::detail::@6</name>
   </compound>
   <compound refid="namespacefaiss_1_1detail" kind="namespace"><name>faiss::detail</name>
   </compound>
@@ -9601,6 +9603,9 @@
   <compound refid="clone__index_8h" kind="file"><name>clone_index.h</name>
   </compound>
   <compound refid="Clustering_8h" kind="file"><name>Clustering.h</name>
+  </compound>
+  <compound refid="distances__dnnl_8h" kind="file"><name>distances_dnnl.h</name>
+    <member refid="distances__dnnl_8h_1a1e0db6a96398a5297d2cb780adc3d926" kind="define"><name>FINTEGER</name></member>
   </compound>
   <compound refid="onednn__utils_8h" kind="file"><name>onednn_utils.h</name>
   </compound>
