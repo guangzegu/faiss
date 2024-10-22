@@ -1309,11 +1309,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Find the nearest neighbors for nx queries in a set of ny vectors using oneDNN/AMX </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/cppcontrib/amx/distances_dnnl.h" line="69" column="6" bodyfile="faiss/cppcontrib/amx/distances_dnnl.h" bodystart="69" bodyend="109"/>
+        <location file="faiss/cppcontrib/amx/distances_dnnl.h" line="69" column="6" bodyfile="faiss/cppcontrib/amx/distances_dnnl.h" bodystart="69" bodyend="108"/>
       </memberdef>
       <memberdef kind="function" id="namespacefaiss_1a71aa4996ab2b1ef00ad16b7a5e9637f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
