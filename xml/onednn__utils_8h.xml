@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="onednn__utils_8h" kind="file" language="C++">
     <compoundname>onednn_utils.h</compoundname>
     <includes local="no">stdlib.h</includes>
@@ -8,12 +8,6 @@
     <includes local="yes">oneapi/dnnl/dnnl.hpp</includes>
     <includedby refid="distances__dnnl_8h" local="no">faiss/cppcontrib/amx/distances_dnnl.h</includedby>
     <incdepgraph>
-      <node id="2">
-        <label>stdlib.h</label>
-      </node>
-      <node id="5">
-        <label>oneapi/dnnl/dnnl.hpp</label>
-      </node>
       <node id="1">
         <label>faiss/cppcontrib/amx/onednn_utils.h</label>
         <link refid="onednn__utils_8h"/>
@@ -26,11 +20,17 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
+      <node id="3">
+        <label>mutex</label>
+      </node>
+      <node id="5">
+        <label>oneapi/dnnl/dnnl.hpp</label>
+      </node>
       <node id="4">
         <label>shared_mutex</label>
       </node>
-      <node id="3">
-        <label>mutex</label>
+      <node id="2">
+        <label>stdlib.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>

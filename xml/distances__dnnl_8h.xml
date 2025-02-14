@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="distances__dnnl_8h" kind="file" language="C++">
     <compoundname>distances_dnnl.h</compoundname>
     <includes refid="onednn__utils_8h" local="no">faiss/cppcontrib/amx/onednn_utils.h</includes>
@@ -8,27 +8,10 @@
     <includes refid="platform__macros_8h" local="no">faiss/impl/platform_macros.h</includes>
     <includes local="no">omp.h</includes>
     <incdepgraph>
-      <node id="17">
-        <label>faiss/impl/FaissException.h</label>
-        <link refid="FaissException_8h_source"/>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-      </node>
-      <node id="27">
-        <label>limits</label>
-      </node>
-      <node id="13">
-        <label>faiss/impl/platform_macros.h</label>
-        <link refid="platform__macros_8h_source"/>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
+      <node id="12">
+        <label>faiss/MetricType.h</label>
+        <link refid="MetricType_8h_source"/>
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -45,11 +28,17 @@
         <childnode refid="33" relation="include">
         </childnode>
       </node>
-      <node id="14">
-        <label>cstdint</label>
-      </node>
-      <node id="8">
-        <label>stdint.h</label>
+      <node id="2">
+        <label>faiss/cppcontrib/amx/onednn_utils.h</label>
+        <link refid="onednn__utils_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
       <node id="7">
         <label>faiss/impl/AuxIndexStructures.h</label>
@@ -69,29 +58,17 @@
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="3">
-        <label>stdlib.h</label>
-      </node>
-      <node id="25">
-        <label>cmath</label>
-      </node>
-      <node id="26">
-        <label>cassert</label>
-      </node>
-      <node id="6">
-        <label>oneapi/dnnl/dnnl.hpp</label>
-      </node>
-      <node id="19">
-        <label>string</label>
-      </node>
-      <node id="22">
-        <label>unordered_set</label>
-      </node>
-      <node id="33">
-        <label>omp.h</label>
-      </node>
-      <node id="18">
-        <label>exception</label>
+      <node id="17">
+        <label>faiss/impl/FaissException.h</label>
+        <link refid="FaissException_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
       </node>
       <node id="21">
         <label>faiss/impl/IDSelector.h</label>
@@ -103,24 +80,31 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="29">
-        <label>faiss/utils/partitioning.h</label>
-        <link refid="partitioning_8h_source"/>
-        <childnode refid="8" relation="include">
+      <node id="16">
+        <label>faiss/impl/ResultHandler.h</label>
+        <link refid="ResultHandler_8h_source"/>
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
         </childnode>
       </node>
-      <node id="15">
-        <label>cstdio</label>
-      </node>
-      <node id="11">
-        <label>vector</label>
-      </node>
-      <node id="20">
-        <label>utility</label>
+      <node id="13">
+        <label>faiss/impl/platform_macros.h</label>
+        <link refid="platform__macros_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
       </node>
       <node id="23">
         <label>faiss/utils/Heap.h</label>
@@ -154,69 +138,85 @@
         <childnode refid="27" relation="include">
         </childnode>
       </node>
-      <node id="32">
-        <label>iostream</label>
-      </node>
-      <node id="2">
-        <label>faiss/cppcontrib/amx/onednn_utils.h</label>
-        <link refid="onednn__utils_8h_source"/>
-        <childnode refid="3" relation="include">
+      <node id="29">
+        <label>faiss/utils/partitioning.h</label>
+        <link refid="partitioning_8h_source"/>
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="24">
-        <label>climits</label>
-      </node>
-      <node id="5">
-        <label>shared_mutex</label>
-      </node>
-      <node id="4">
-        <label>mutex</label>
-      </node>
-      <node id="12">
-        <label>faiss/MetricType.h</label>
-        <link refid="MetricType_8h_source"/>
         <childnode refid="13" relation="include">
         </childnode>
       </node>
       <node id="31">
         <label>algorithm</label>
       </node>
-      <node id="30">
-        <label>stdio.h</label>
+      <node id="26">
+        <label>cassert</label>
       </node>
-      <node id="16">
-        <label>faiss/impl/ResultHandler.h</label>
-        <link refid="ResultHandler_8h_source"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
-        <childnode refid="31" relation="include">
-        </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
+      <node id="24">
+        <label>climits</label>
+      </node>
+      <node id="25">
+        <label>cmath</label>
+      </node>
+      <node id="14">
+        <label>cstdint</label>
+      </node>
+      <node id="15">
+        <label>cstdio</label>
       </node>
       <node id="9">
         <label>cstring</label>
       </node>
+      <node id="18">
+        <label>exception</label>
+      </node>
+      <node id="32">
+        <label>iostream</label>
+      </node>
+      <node id="27">
+        <label>limits</label>
+      </node>
       <node id="10">
         <label>memory</label>
       </node>
+      <node id="4">
+        <label>mutex</label>
+      </node>
+      <node id="33">
+        <label>omp.h</label>
+      </node>
+      <node id="6">
+        <label>oneapi/dnnl/dnnl.hpp</label>
+      </node>
+      <node id="5">
+        <label>shared_mutex</label>
+      </node>
+      <node id="8">
+        <label>stdint.h</label>
+      </node>
+      <node id="30">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="19">
+        <label>string</label>
+      </node>
+      <node id="22">
+        <label>unordered_set</label>
+      </node>
+      <node id="20">
+        <label>utility</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
     </incdepgraph>
     <innernamespace refid="namespacefaiss">faiss</innernamespace>
-      <sectiondef kind="define">
+    <sectiondef kind="define">
       <memberdef kind="define" id="distances__dnnl_8h_1a1e0db6a96398a5297d2cb780adc3d926" prot="public" static="no">
         <name>FINTEGER</name>
         <initializer>long</initializer>
@@ -230,7 +230,7 @@
         </inbodydescription>
         <location file="faiss/cppcontrib/amx/distances_dnnl.h" line="19" column="9" bodyfile="faiss/cppcontrib/amx/distances_dnnl.h" bodystart="19" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -272,7 +272,7 @@
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nx,</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ny,</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BlockResultHandler&amp;<sp/>res)<sp/>{</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>SingleResultHandler<sp/>=</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">SingleResultHandler<sp/>=</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>BlockResultHandler::SingleResultHandler;</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>[[maybe_unused]]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nt<sp/>=<sp/>std::min(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">(nx),<sp/>omp_get_max_threads());</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
