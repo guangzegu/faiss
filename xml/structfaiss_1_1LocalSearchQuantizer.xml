@@ -1791,6 +1791,10 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="9">
+        <label>faiss::MaybeOwnedVector&lt; uint8_t &gt;</label>
+        <link refid="structfaiss_1_1MaybeOwnedVector"/>
+      </node>
       <node id="2">
         <label>faiss::AdditiveQuantizer</label>
         <link refid="structfaiss_1_1AdditiveQuantizer"/>
@@ -1821,6 +1825,9 @@
         <link refid="structfaiss_1_1IndexFlatCodes"/>
         <childnode refid="8" relation="public-inheritance">
         </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>codes</edgelabel>
+        </childnode>
       </node>
       <node id="5">
         <label>faiss::IndexFlatL2</label>
@@ -1833,7 +1840,7 @@
         <link refid="structfaiss_1_1LocalSearchQuantizer"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>icm_encoder_factory</edgelabel>
         </childnode>
       </node>
@@ -1841,7 +1848,7 @@
         <label>faiss::Quantizer</label>
         <link refid="structfaiss_1_1Quantizer"/>
       </node>
-      <node id="9">
+      <node id="10">
         <label>faiss::lsq::IcmEncoderFactory</label>
         <link refid="structfaiss_1_1lsq_1_1IcmEncoderFactory"/>
       </node>
@@ -1923,7 +1930,7 @@
       <member refid="structfaiss_1_1LocalSearchQuantizer_1afe599b9491ee5f214d5f4ec18c9fb613" prot="public" virt="non-virtual"><scope>faiss::LocalSearchQuantizer</scope><name>update_codebooks</name></member>
       <member refid="structfaiss_1_1LocalSearchQuantizer_1ac1d00b1c637832808f1dc5c329369d02" prot="public" virt="non-virtual"><scope>faiss::LocalSearchQuantizer</scope><name>update_codebooks_with_double</name></member>
       <member refid="structfaiss_1_1AdditiveQuantizer_1a4774f0efe877d34c5c98c2bef4ae1912" prot="public" virt="non-virtual"><scope>faiss::LocalSearchQuantizer</scope><name>verbose</name></member>
-      <member refid="structfaiss_1_1AdditiveQuantizer_1aaf69ae45bab0489b5c17be8be949bd31" prot="public" virt="virtual"><scope>faiss::LocalSearchQuantizer</scope><name>~AdditiveQuantizer</name></member>
+      <member refid="structfaiss_1_1AdditiveQuantizer_1a1a5d116e148ef705f695f0fd9a14b81d" prot="public" virt="virtual"><scope>faiss::LocalSearchQuantizer</scope><name>~AdditiveQuantizer</name></member>
       <member refid="structfaiss_1_1LocalSearchQuantizer_1a0e53cecfbb464ce92344b5d839d46a40" prot="public" virt="non-virtual"><scope>faiss::LocalSearchQuantizer</scope><name>~LocalSearchQuantizer</name></member>
       <member refid="structfaiss_1_1Quantizer_1a3983e6b49d0c28523ec650c877214ebc" prot="public" virt="virtual"><scope>faiss::LocalSearchQuantizer</scope><name>~Quantizer</name></member>
     </listofallmembers>

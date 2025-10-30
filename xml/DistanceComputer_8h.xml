@@ -4,6 +4,7 @@
     <compoundname>DistanceComputer.h</compoundname>
     <includes refid="Index_8h" local="no">faiss/Index.h</includes>
     <includedby refid="IndexFlatCodes_8h" local="no">faiss/IndexFlatCodes.h</includedby>
+    <includedby refid="RaBitQuantizer_8h" local="no">faiss/impl/RaBitQuantizer.h</includedby>
     <includedby refid="ScalarQuantizer_8h" local="no">faiss/impl/ScalarQuantizer.h</includedby>
     <incdepgraph>
       <node id="2">
@@ -13,17 +14,17 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
       <node id="3">
         <label>faiss/MetricType.h</label>
         <link refid="MetricType_8h_source"/>
         <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -32,28 +33,63 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>faiss/impl/platform_macros.h</label>
-        <link refid="platform__macros_8h_source"/>
+      <node id="6">
+        <label>faiss/impl/FaissAssert.h</label>
+        <link refid="FaissAssert_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="7">
+        <label>faiss/impl/FaissException.h</label>
+        <link refid="FaissException_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>faiss/impl/platform_macros.h</label>
+        <link refid="platform__macros_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
         <label>cstdint</label>
       </node>
-      <node id="6">
+      <node id="5">
         <label>cstdio</label>
       </node>
-      <node id="7">
-        <label>sstream</label>
+      <node id="13">
+        <label>cstdlib</label>
       </node>
       <node id="8">
-        <label>string</label>
+        <label>exception</label>
+      </node>
+      <node id="14">
+        <label>sstream</label>
       </node>
       <node id="9">
-        <label>typeinfo</label>
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>utility</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
@@ -102,6 +138,8 @@
         </childnode>
         <childnode refid="25" relation="include">
         </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
       </node>
       <node id="7">
         <label>faiss/IndexHNSW.h</label>
@@ -132,6 +170,16 @@
       <node id="23">
         <label>faiss/IndexIVFPQR.h</label>
         <link refid="IndexIVFPQR_8h_source"/>
+      </node>
+      <node id="31">
+        <label>faiss/IndexIVFRaBitQ.h</label>
+        <link refid="IndexIVFRaBitQ_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>faiss/IndexIVFRaBitQFastScan.h</label>
+        <link refid="IndexIVFRaBitQFastScan_8h_source"/>
       </node>
       <node id="17">
         <label>faiss/IndexLSH.h</label>
@@ -174,24 +222,36 @@
         <link refid="IndexPQFastScan_8h_source"/>
       </node>
       <node id="25">
+        <label>faiss/IndexRaBitQ.h</label>
+        <link refid="IndexRaBitQ_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>faiss/IndexRaBitQFastScan.h</label>
+        <link refid="IndexRaBitQFastScan_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
         <label>faiss/IndexScalarQuantizer.h</label>
         <link refid="IndexScalarQuantizer_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
       <node id="14">
         <label>faiss/gpu/GpuIcmEncoder.h</label>
         <link refid="GpuIcmEncoder_8h_source"/>
       </node>
-      <node id="28">
+      <node id="33">
         <label>faiss/gpu/GpuIndexIVFFlat.h</label>
         <link refid="GpuIndexIVFFlat_8h_source"/>
       </node>
-      <node id="26">
+      <node id="29">
         <label>faiss/gpu/GpuIndexIVFScalarQuantizer.h</label>
         <link refid="GpuIndexIVFScalarQuantizer_8h_source"/>
       </node>
@@ -218,7 +278,9 @@
         <link refid="DistanceComputer_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
         </childnode>
       </node>
       <node id="13">
@@ -245,6 +307,18 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
+      <node id="30">
+        <label>faiss/impl/RaBitQuantizer.h</label>
+        <link refid="RaBitQuantizer_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
       <node id="16">
         <label>faiss/impl/ResidualQuantizer.h</label>
         <link refid="ResidualQuantizer_8h_source"/>
@@ -255,12 +329,12 @@
         <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="32">
         <label>faiss/impl/ScalarQuantizer.h</label>
         <link refid="ScalarQuantizer_8h_source"/>
-        <childnode refid="25" relation="include">
-        </childnode>
         <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -375,7 +449,7 @@
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-<ref refid="structfaiss_1_1NegativeDistanceComputer_1a43391d16b8fc618a6ca30010acfe3a8c" kindref="member">basedis</ref>-&gt;<ref refid="structfaiss_1_1DistanceComputer_1a4b7236a757c788401aac00598ed902c7" kindref="member">symmetric_dis</ref>(i,<sp/>j);</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1NegativeDistanceComputer" kindref="compound">~NegativeDistanceComputer</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1NegativeDistanceComputer" kindref="compound">~NegativeDistanceComputer</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1NegativeDistanceComputer_1a43391d16b8fc618a6ca30010acfe3a8c" kindref="member">basedis</ref>;</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="106"><highlight class="normal">};</highlight></codeline>
@@ -400,7 +474,7 @@
 <codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>compute<sp/>distance<sp/>of<sp/>current<sp/>query<sp/>to<sp/>an<sp/>encoded<sp/>vector</highlight></codeline>
 <codeline lineno="126" refid="structfaiss_1_1FlatCodesDistanceComputer_1a25f3f5c0fabb20d56e29ac7ecef3eb11" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1FlatCodesDistanceComputer_1a25f3f5c0fabb20d56e29ac7ecef3eb11" kindref="member">distance_to_code</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>code)<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1FlatCodesDistanceComputer" kindref="compound">~FlatCodesDistanceComputer</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structfaiss_1_1FlatCodesDistanceComputer" kindref="compound">~FlatCodesDistanceComputer</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{}</highlight></codeline>
 <codeline lineno="129"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>faiss</highlight><highlight class="normal"></highlight></codeline>

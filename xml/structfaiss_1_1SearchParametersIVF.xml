@@ -4,6 +4,7 @@
     <compoundname>faiss::SearchParametersIVF</compoundname>
     <basecompoundref refid="structfaiss_1_1SearchParameters" prot="public" virt="non-virtual">faiss::SearchParameters</basecompoundref>
     <derivedcompoundref refid="structfaiss_1_1IVFPQSearchParameters" prot="public" virt="non-virtual">faiss::IVFPQSearchParameters</derivedcompoundref>
+    <derivedcompoundref refid="structfaiss_1_1IVFRaBitQSearchParameters" prot="public" virt="non-virtual">faiss::IVFRaBitQSearchParameters</derivedcompoundref>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structfaiss_1_1SearchParametersIVF_1a8367077ad30dca0bf5cc4daa6ee195e7" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -82,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="faiss/Index.h" line="66" column="16" bodyfile="faiss/Index.h" bodystart="66" bodyend="-1"/>
+        <location file="faiss/Index.h" line="88" column="16" bodyfile="faiss/Index.h" bodystart="88" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -109,6 +110,12 @@
       <node id="3">
         <label>faiss::IVFPQSearchParameters</label>
         <link refid="structfaiss_1_1IVFPQSearchParameters"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>faiss::IVFRaBitQSearchParameters</label>
+        <link refid="structfaiss_1_1IVFRaBitQSearchParameters"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>

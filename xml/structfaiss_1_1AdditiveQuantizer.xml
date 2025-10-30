@@ -1082,10 +1082,10 @@
         </inbodydescription>
         <location file="faiss/impl/AdditiveQuantizer.h" line="207" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="structfaiss_1_1AdditiveQuantizer_1aaf69ae45bab0489b5c17be8be949bd31" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="structfaiss_1_1AdditiveQuantizer_1a1a5d116e148ef705f695f0fd9a14b81d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
         <definition>virtual faiss::AdditiveQuantizer::~AdditiveQuantizer</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() override</argsstring>
         <name>~AdditiveQuantizer</name>
         <qualifiedname>faiss::AdditiveQuantizer::~AdditiveQuantizer</qualifiedname>
         <briefdescription>
@@ -1105,6 +1105,7 @@
         <reimplementedby refid="structfaiss_1_1LocalSearchQuantizer_1ac4a39a1bbe850d28db3a4dffc7e6dd1b">train</reimplementedby>
         <reimplementedby refid="structfaiss_1_1ProductAdditiveQuantizer_1a3549e6bbf833c66f15ec9e6de13f3843">train</reimplementedby>
         <reimplementedby refid="structfaiss_1_1ProductQuantizer_1a3d066376adf471dd936c251f9f5706c3">train</reimplementedby>
+        <reimplementedby refid="structfaiss_1_1RaBitQuantizer_1a253ae543d36c51c3ca63d520d7afb475">train</reimplementedby>
         <reimplementedby refid="structfaiss_1_1ResidualQuantizer_1a0985eadd777003e6faca9b2247d3b30b">train</reimplementedby>
         <reimplementedby refid="structfaiss_1_1ScalarQuantizer_1a7cc2c64ef7cde9e5d319378d7afd986e">train</reimplementedby>
         <param>
@@ -1184,6 +1185,10 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="8">
+        <label>faiss::MaybeOwnedVector&lt; uint8_t &gt;</label>
+        <link refid="structfaiss_1_1MaybeOwnedVector"/>
+      </node>
       <node id="1">
         <label>faiss::AdditiveQuantizer</label>
         <link refid="structfaiss_1_1AdditiveQuantizer"/>
@@ -1213,6 +1218,9 @@
         <label>faiss::IndexFlatCodes</label>
         <link refid="structfaiss_1_1IndexFlatCodes"/>
         <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>codes</edgelabel>
         </childnode>
       </node>
       <node id="4">
@@ -1280,7 +1288,7 @@
       <member refid="structfaiss_1_1Quantizer_1a6e97ff4cce0bb4163aa8fbe95df456c9" prot="public" virt="pure-virtual"><scope>faiss::AdditiveQuantizer</scope><name>train</name></member>
       <member refid="structfaiss_1_1AdditiveQuantizer_1abef163b7b94ef867c727ab3344853637" prot="public" virt="non-virtual"><scope>faiss::AdditiveQuantizer</scope><name>train_norm</name></member>
       <member refid="structfaiss_1_1AdditiveQuantizer_1a4774f0efe877d34c5c98c2bef4ae1912" prot="public" virt="non-virtual"><scope>faiss::AdditiveQuantizer</scope><name>verbose</name></member>
-      <member refid="structfaiss_1_1AdditiveQuantizer_1aaf69ae45bab0489b5c17be8be949bd31" prot="public" virt="virtual"><scope>faiss::AdditiveQuantizer</scope><name>~AdditiveQuantizer</name></member>
+      <member refid="structfaiss_1_1AdditiveQuantizer_1a1a5d116e148ef705f695f0fd9a14b81d" prot="public" virt="virtual"><scope>faiss::AdditiveQuantizer</scope><name>~AdditiveQuantizer</name></member>
       <member refid="structfaiss_1_1Quantizer_1a3983e6b49d0c28523ec650c877214ebc" prot="public" virt="virtual"><scope>faiss::AdditiveQuantizer</scope><name>~Quantizer</name></member>
     </listofallmembers>
   </compounddef>

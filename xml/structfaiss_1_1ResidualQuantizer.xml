@@ -1604,6 +1604,10 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="9">
+        <label>faiss::MaybeOwnedVector&lt; uint8_t &gt;</label>
+        <link refid="structfaiss_1_1MaybeOwnedVector"/>
+      </node>
       <node id="2">
         <label>faiss::AdditiveQuantizer</label>
         <link refid="structfaiss_1_1AdditiveQuantizer"/>
@@ -1613,7 +1617,7 @@
           <edgelabel>qnorm</edgelabel>
         </childnode>
       </node>
-      <node id="10">
+      <node id="11">
         <label>faiss::ClusteringParameters</label>
         <link refid="structfaiss_1_1ClusteringParameters"/>
       </node>
@@ -1638,6 +1642,9 @@
         <link refid="structfaiss_1_1IndexFlatCodes"/>
         <childnode refid="8" relation="public-inheritance">
         </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>codes</edgelabel>
+        </childnode>
       </node>
       <node id="5">
         <label>faiss::IndexFlatL2</label>
@@ -1645,13 +1652,13 @@
         <childnode refid="6" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
+      <node id="10">
         <label>faiss::ProgressiveDimClusteringParameters</label>
         <link refid="structfaiss_1_1ProgressiveDimClusteringParameters"/>
-        <childnode refid="10" relation="public-inheritance">
+        <childnode refid="11" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>faiss::ProgressiveDimIndexFactory</label>
         <link refid="structfaiss_1_1ProgressiveDimIndexFactory"/>
       </node>
@@ -1664,10 +1671,10 @@
         <link refid="structfaiss_1_1ResidualQuantizer"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>cp</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>assign_index_factory</edgelabel>
         </childnode>
       </node>
@@ -1747,7 +1754,7 @@
       <member refid="structfaiss_1_1ResidualQuantizer_1a9d167678afe137a3c71439fa3cc3ea03" prot="public" virt="non-virtual"><scope>faiss::ResidualQuantizer</scope><name>train_type_t</name></member>
       <member refid="structfaiss_1_1ResidualQuantizer_1acd4c6a23a96bf055337de4a5d8addcca" prot="public" virt="non-virtual"><scope>faiss::ResidualQuantizer</scope><name>use_beam_LUT</name></member>
       <member refid="structfaiss_1_1AdditiveQuantizer_1a4774f0efe877d34c5c98c2bef4ae1912" prot="public" virt="non-virtual"><scope>faiss::ResidualQuantizer</scope><name>verbose</name></member>
-      <member refid="structfaiss_1_1AdditiveQuantizer_1aaf69ae45bab0489b5c17be8be949bd31" prot="public" virt="virtual"><scope>faiss::ResidualQuantizer</scope><name>~AdditiveQuantizer</name></member>
+      <member refid="structfaiss_1_1AdditiveQuantizer_1a1a5d116e148ef705f695f0fd9a14b81d" prot="public" virt="virtual"><scope>faiss::ResidualQuantizer</scope><name>~AdditiveQuantizer</name></member>
       <member refid="structfaiss_1_1Quantizer_1a3983e6b49d0c28523ec650c877214ebc" prot="public" virt="virtual"><scope>faiss::ResidualQuantizer</scope><name>~Quantizer</name></member>
     </listofallmembers>
   </compounddef>
